@@ -50,7 +50,7 @@ const TopBar = () => {
             <div className="topbar-grid-item topbar-item" onClick={() => {
                 setrenderMobileMenuState(false);
             }}>X</div>
-            <div className="topbar-grid-item topbar-item" onClick={() => { setrenderMobileMenuState(false); navigate("/") }}>OA</div>
+            <div className="topbar-grid-item topbar-item" onClick={() => { setrenderMobileMenuState(false); navigate("/vite-react-router/") }}>OA</div>
             <div className="topbar-grid-item topbar-item" onClick={(e) => {
                 scrollToView("myjourneyh1", e);
             }}>work</div>
@@ -59,7 +59,7 @@ const TopBar = () => {
             <div className="topbar-grid-item topbar-item" title="onuraltuntasbusiness@gmail.com">contact</div>
             <div id="downloadmycv" className="topbar-grid-item topbar-item" title="download cv"><img height="28px" width="28px" src={cv} onClick={() => {
                 setrenderMobileMenuState(false);
-                navigate("/cv")
+                navigate("/vite-react-router//cv")
             }} /></div>
             <div id="linkedin" className="topbar-grid-item topbar-item"><img onClick={() => {
                 window.open("https://www.linkedin.com/in/onur-altuntas1/", '_blank');
@@ -78,7 +78,7 @@ const TopBar = () => {
             return <>
                 <div ref={topbarRef} id="topbar">
                     <div className="topbar-grid-container">
-                        <div className="topbar-grid-item topbar-item" onClick={() => { setrenderMobileMenuState(false); navigate("/") }}>OA</div>
+                        <div className="topbar-grid-item topbar-item" onClick={() => { setrenderMobileMenuState(false); navigate("/vite-react-router/") }}>OA</div>
                         <div className="topbar-grid-item topbar-item" onClick={(e) => {
                             scrollToView("myjourneyh1", e);
                         }}>work</div>
@@ -89,7 +89,7 @@ const TopBar = () => {
                             alert("contact copied to clipboard!")
                         }}>contact</div>
                         <div id="downloadmycv" className="topbar-grid-item topbar-item" title="download cv"><img height="28px" width="28px" src={cv} onClick={() => {
-                            navigate("/cv")
+                            navigate("/vite-react-router/cv")
                         }} /></div>
                         <div id="linkedin" className="topbar-grid-item topbar-item"><img onClick={() => {
                             window.open("https://www.linkedin.com/in/onur-altuntas1/", '_blank');

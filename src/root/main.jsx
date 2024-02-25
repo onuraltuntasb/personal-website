@@ -13,11 +13,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "/vite-react-router/",
         element: <LandingPage />,
       },
       {
-        path: "/cv",
+        path: "/vite-react-router/cv",
         element: <CvPage />,
       }
     ],
