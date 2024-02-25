@@ -1,3 +1,4 @@
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from '../pages/ErrorPage';
@@ -5,6 +6,7 @@ import './App.css'
 import TopBar from '../components/TopBar';
 import LandingPage from '../pages/LandingPage';
 import CvPage from '../pages/CvPage';
+
 
 const router = createBrowserRouter([
   {
@@ -24,7 +26,7 @@ const router = createBrowserRouter([
 
   },
 
-], { basename: import.meta.env.BASE_URL });
+]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
