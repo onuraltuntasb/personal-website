@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import ErrorPage from '../pages/ErrorPage';
 import './App.css'
 import TopBar from '../components/TopBar';
@@ -8,7 +8,7 @@ import LandingPage from '../pages/LandingPage';
 import CvPage from '../pages/CvPage';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <TopBar />,
     errorElement: <ErrorPage />,
