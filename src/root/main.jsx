@@ -1,3 +1,4 @@
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from '../pages/ErrorPage';
@@ -13,11 +14,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/vite-react-router/",
+        path: "/",
         element: <LandingPage />,
       },
       {
-        path: "/vite-react-router/cv",
+        path: "/cv",
         element: <CvPage />,
       }
     ],
