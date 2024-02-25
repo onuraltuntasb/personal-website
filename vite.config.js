@@ -7,5 +7,5 @@ export default defineConfig({
   // server: {
   //   hmr: false
   // }
-  base:"/personal-website/"
+  base: "./"
 })
