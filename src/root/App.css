@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end of css reset */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+
+}
+
+h1 {
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+.topbar-grid-container {
+    display: grid;
+    grid-template-columns: repeat(32, auto);
+    padding: .25rem;
+}
+
+.topbar-grid-item {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+#downloadmycv {
+    grid-column: 29;
+}
+
+#linkedin {
+    grid-column: 30;
+}
+
+#github {
+    grid-column: 31;
+}
+
+#medium {
+    grid-column: 32;
+}
+
+#topbar {
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.027);
+}
+
+#topbar-menu {
+    grid-column: 32;
+}
+
+.topbar-item {
+    font-size: 1.5rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 3.75rem;
+}
+
+.landing-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: .25rem;
+}
+
+.landing-grid-item {
+    font-size: 1.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+#introduction {
+    font-size: 2.5rem;
+}
+
+#selfy {
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.myjourney {
+    margin-top: 3rem;
+    text-align: center;
+    animation: reveal-toright 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+.myjourney p {
+    font-size: 1.5rem;
+
+}
+
+.myjourney-header {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 25rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .myjourney-grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        padding: .25rem;
+        margin-top: 2rem;
+    }
+
+    .myjourney-grid-item-left {
+        grid-column: 1;
+        font-size: 1.5rem;
+        padding: 1rem;
+        animation: reveal-toup 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+
+    }
+
+    .myjourney-grid-item-right {
+        padding: 1rem;
+        grid-column: 1;
+        font-size: 1.5rem;
+        animation: reveal-toup 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+
+    }
+
+    #myjourneyh1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) {
+    .myjourney-grid-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        padding: .25rem;
+        margin-top: 2rem;
+    }
+
+    .myjourney-grid-item-left {
+        grid-column: 1 / span 1;
+        font-size: 1.5rem;
+        padding: 1rem;
+        animation: reveal-toup 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    }
+
+    .myjourney-grid-item-right {
+        padding: 1rem;
+        grid-column: 2 / span 8;
+        font-size: 1.5rem;
+        animation: reveal-toup 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+
+    }
+
+}
+
+@keyframes reveal-toup {
+    0% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes reveal-toright {
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+#myjourney-img {
+    border-radius: .625rem;
+    height: 6.5rem;
+    width: 7rem;
+}
