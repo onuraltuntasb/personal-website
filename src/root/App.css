@@ -1,0 +1,475 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end of css reset */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+
+}
+
+h1 {
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+.topbar-grid-container {
+    display: grid;
+    grid-template-columns: repeat(32, auto);
+    padding: .25rem;
+}
+
+.topbar-grid-item {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+#downloadmycv {
+    grid-column: 29;
+}
+
+#linkedin {
+    grid-column: 30;
+}
+
+#github {
+    grid-column: 31;
+}
+
+#medium {
+    grid-column: 32;
+}
+
+#topbar {
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.027);
+}
+
+#topbar-menu {
+    grid-column: 32;
+}
+
+.topbar-item {
+    font-size: 1.5rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: .1px solid;
+    border-style: groove;
+    backdrop-filter: blur(10px);
+}
+
+.sticky+.content {
+    padding-top: 3.75rem;
+}
+
+.landing-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: .25rem;
+}
+
+.landing-grid-item {
+    font-size: 1.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+#introduction {
+    font-size: 2.5rem;
+}
+
+#selfy {
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.myjourney {
+    margin-top: 3rem;
+    text-align: center;
+    animation: reveal-toright 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+.myjourney p {
+    font-size: 1.5rem;
+
+}
+
+.myjourney-header {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 25rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .myjourney-grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        padding: .25rem;
+        margin-top: 2rem;
+    }
+
+    .myjourney-grid-item-left {
+        grid-column: 1;
+        font-size: 1.5rem;
+        padding: 1rem;
+        animation: reveal-toup 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+
+    }
+
+    .myjourney-grid-item-right {
+        padding: 1rem;
+        grid-column: 1;
+        font-size: 1.5rem;
+        animation: reveal-toup 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+
+    }
+
+    #myjourneyh1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) {
+    .myjourney-grid-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        padding: .25rem;
+        margin-top: 2rem;
+    }
+
+    .myjourney-grid-item-left {
+        grid-column: 1 / span 1;
+        font-size: 1.5rem;
+        padding: 1rem;
+        animation: reveal-toup 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    }
+
+    .myjourney-grid-item-right {
+        padding: 1rem;
+        grid-column: 2 / span 8;
+        font-size: 1.5rem;
+        animation: reveal-toup 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+
+    }
+
+}
+
+@keyframes reveal-toup {
+    0% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes reveal-toright {
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+#myjourney-img {
+    border-radius: .625rem;
+    height: 6.5rem;
+    width: 7rem;
+}
+
+.portfolio-card {
+    margin-left: 16px;
+    height: auto;
+    width: 220px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 18px;
+    cursor: pointer;
+    padding-bottom: 8px;
+
+
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .4s ease
+}
+
+.portfolio-img {
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-radius: 10px;
+}
+
+.portfolio-name {
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.portfolio-text {
+    padding-left: 16px;
+}
+
+.portfolio-tag {
+
+    width: fit-content;
+    margin-top: 8px;
+    padding: 4px;
+    font-size: 18px;
+    border-radius: 24px;
+    border: 1px solid;
+}
+
+.portfolio-col {
+    display: flex;
+}
+
+.portfolio-row {
+    margin-bottom: 16px;
+}
+
+.portfolio-logo {
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    outline: none;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+.portfolio-logo:hover {
+    font-variation-settings: "wght" 582;
+    letter-spacing: 1px;
+}
+
+
+.portfolio-container-wrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.loader {
+    width: 215px;
+    height: 215px;
+    display: block;
+    margin: auto;
+    position: relative;
+    background: #FFF;
+    box-sizing: border-box;
+}
+
+.loader::after {
+    content: '';
+    width: calc(100% - 30px);
+    height: calc(100% - 15px);
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+        linear-gradient(#DDD 100px, transparent 0),
+        linear-gradient(#DDD 16px, transparent 0),
+        linear-gradient(#DDD 50px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 75px 175px, 100% 100px, 100% 16px, 100% 30px;
+    background-position: -185px 0, center 0, center 115px, center 142px;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+    to {
+        background-position: 185px 0, center 0, center 115px, center 142px;
+    }
+}
