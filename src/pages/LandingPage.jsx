@@ -3,7 +3,6 @@ import selfy from "../assets/selfy.png"
 import uni from "../assets/uni.jpg"
 import herogi from "../assets/herogi.png"
 import freelance from "../assets/freelance.png"
-import PortfolioPage from "../components/Portfolio";
 import Portfolio from "../components/Portfolio";
 
 const LandingPage = () => {
@@ -75,7 +74,7 @@ const LandingPage = () => {
         return <>
             <div className="myjourney" >
                 <h1 id="myjourneyh1">----- My Journey -----</h1>
-                <p className="myjourney-header">It is important to make people`&apos;`s lives easy and discover new technologies but we should not forget power comes with responsibility so computer science not just programming it includes ethics</p>
+                <p className="myjourney-header">It is important to make people's lives easy and develop new technologies but dont't forget! programmers are also human ;)</p>
             </div>
 
 
@@ -143,7 +142,7 @@ const LandingPage = () => {
         <>
             {renderLandingPage()}
             <br />
-          
+
             <Portfolio />
         </>
 

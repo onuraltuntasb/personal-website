@@ -54,8 +54,9 @@ const TopBar = () => {
             <div className="topbar-grid-item topbar-item" onClick={(e) => {
                 scrollToView("myjourneyh1", e);
             }}>work</div>
-            <div className="topbar-grid-item topbar-item">story</div>
-            <div className="topbar-grid-item topbar-item">experiences</div>
+            <div className="topbar-grid-item topbar-item" onClick={(e) => {
+                scrollToView("myportfolioh1", e);
+            }}>portfolio</div>
             <div className="topbar-grid-item topbar-item" title="onuraltuntasbusiness@gmail.com">contact</div>
             <div id="downloadmycv" className="topbar-grid-item topbar-item" title="download cv"><img height="28px" width="28px" src={cv} onClick={() => {
                 setrenderMobileMenuState(false);
@@ -82,7 +83,6 @@ const TopBar = () => {
                         <div className="topbar-grid-item topbar-item" onClick={(e) => {
                             scrollToView("myjourneyh1", e);
                         }}>work</div>
-                        <div className="topbar-grid-item topbar-item">story</div>
                         <div className="topbar-grid-item topbar-item" onClick={(e) => {
                             scrollToView("portfolioh1", e);
                         }}>portfolio</div>
